@@ -1,0 +1,496 @@
+/*font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Permanent Marker', cursive;*/
+
+
+/*-------------------General---------------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+/*fuentes*/
+h1,h2{
+    font-family: 'Permanent Marker', cursive;
+    color: aliceblue;
+}
+
+h3,h4,h5{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+}
+
+/*----------------Navegador--------------------*/
+header{
+background-color:#303030;
+padding: 20px;
+display:flex; 
+justify-content:space-between;
+align-items: center;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+
+header h4{
+    display: none;
+}
+
+
+
+@media (min-width: 1024px){
+    header{
+        background-color:#303030;
+        padding: 20px;
+        display:flex; 
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        .nav-list{
+            display:flex;
+            flex-direction: row;
+            gap: 20px;
+            font-size: 1rem;
+        }
+
+        header h4{
+            color: red;
+            display: flex;
+        }
+}
+/*----------------Footer-----------------*/
+footer{
+    height:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsla(0, 0%, 50%, 0.797);
+}
+
+footer h3{
+    font-size: 1rem;
+    padding-bottom: 5px;
+}
+
+footer h4{
+    font-size: 0.7rem;
+    padding-bottom: 5px ;
+}
+
+
+@media (min-width: 1024px){
+    footer{
+        height:30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        padding-right: 30px;
+        color: hsla(0, 0%, 50%, 0.797);
+        gap: 10px;
+     
+    }
+    
+    footer h3{
+        align-self: center;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    footer h4{
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/*-------------------------INDEX-------------------------------*/
+p{ font-family: 'IBM Plex Sans', sans-serif;
+    color: aliceblue;}
+
+.portada{
+    /*aca va una imagen de fondo*/
+    background-color: grey;
+    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-presentacion{
+    width: fit-content;
+    height: 30%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.623);
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left:50px;
+    padding-right:50px;
+    
+}
+
+.tarjeta-presentacion h1{
+    color: red;
+    font-size: 2.5rem;
+}
+
+.tarjeta-presentacion h2{
+    color: black;
+    font-size: 1rem;
+    font-weight: lighter;
+}
+
+.introduccion{
+    height:50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.introduccion p{
+    width: 70%;
+    padding: 20px;
+    font-size: 0.8rem;
+}
+
+.boton-rojo{
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    font-size: 0.8rem;
+    
+}
+
+.mayor{
+    width: 90px;
+    padding-bottom: 0.5px;
+}
+
+.book-now{
+    height:50vh;
+    background-color:grey;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-blanco{
+    background-color: whitesmoke;
+    height: 7%;
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.ig{
+    height:50vh;
+}
+
+/*-----------Index desktop----------*/
+
+@media (min-width: 1024px){
+    .tarjeta-presentacion{
+        width: fit-content;
+        height: 30%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.623);
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left:50px;
+        padding-right:50px;
+        
+    }
+    
+    .tarjeta-presentacion h1{
+        color: red;
+        font-size: 3rem;
+    }
+    
+    .tarjeta-presentacion h2{
+        color: black;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .introduccion p{
+        width: 50%;
+        padding: 35px;
+        font-size: 1rem;
+    }
+    
+    .boton-rojo{
+        background-color: red;
+        padding: 10px;
+        border-radius: 5px;
+        color: black;
+        font-weight: bold;
+        width: 100px;
+        text-align: center;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .mayor{
+        width: 200px;
+        padding-bottom: 0.5px;
+    }
+    
+    .boton-blanco{
+        background-color: whitesmoke;
+        height: 10%;
+        width: 15%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color: black;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+}
+
+/*---------------------------About me---------------------------*/
+
+.profile{
+    margin-top: 10vh;
+    height:60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile h1{
+    font-size: 2rem;
+    width: fit-content;
+    background-color: #303030;
+    padding: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+    
+}
+
+.profile h3{
+    color: white;
+    font-size: 1rem;
+}
+
+/*profile picture*/
+.profile img{
+    width: 50%;
+}
+
+.biografia{
+    height:50vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.biografia h4{
+    color: white;
+    font-weight: lighter;
+    padding-left: 15%;
+    align-self: flex-start;
+    font-size: 0.9;
+}
+
+.biografia p{
+    width: 70%;
+    font-size: 0.9;
+}
+
+.botones{
+    height:50vh; 
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------About me desktop-------*/
+
+@media (min-width: 1024px){
+    .profile h1{
+        font-size: 2.5rem;
+        width: fit-content;
+        background-color: #303030;
+        padding: 15px;
+        text-align: center;
+        width: 30%;
+    }
+    
+    .profile h3{
+        color: white;
+        font-size: 1.3rem;
+    }
+    
+    /*profile picture*/
+    .profile img{
+        width: 30%;
+    }
+    
+    .biografia h4{
+        color: white;
+        font-weight: lighter;
+        padding-left: 30%;
+        align-self: flex-start;
+        font-size: 1.2rem;
+    }
+    
+    .biografia p{
+        width: 40%;
+        font-size: 1.2rem;
+    }
+
+    .botones{
+        height:50vh; 
+        display: flex;
+        flex-direction: row;
+        gap: 220px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/*-------------------------WORK----------------------------*/
+
+.work-titulo{
+    height:20vh; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.work-titulo h2{
+    padding-left: 60px;
+    font-size: 3rem;
+}
+
+.work-titulo h4{
+    padding-right: 60px;
+    color: white;
+    font-size: 0.9rem;
+}
+
+.galeria{
+    height:70vh;
+    display:flex;
+}
+
+.inicio-studio{
+    height:35vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.destacado-studio{
+  background-color: darkred;
+  width: 35%;
+  text-align: center;
+  padding:20px;
+}
+
+.ubi-studio{
+    height:60vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+}
+
+.ubi-studio p{
+    width: 30%;
+    background-color: #303030;
+    margin-left: 200px;
+    padding: 30px;
+    text-align: justify;
+}
+
+.ubi-studio iframe{
+    margin-right: 200px;
+}
+
+/*------------------APPOINTMENTS-----------------------*/
+
+.intro-appointments{
+    height: 35vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 50px;
+    align-items: center;
+    gap: 20px;
+}
+
+.intro-appointments h2{
+    font-size: 2.5rem;
+}
+
+.intro-appointments p{
+    width: 50%;
+}
+
+.formulario{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: aliceblue;
+    
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left:200px;
+}
+
+.formulario-campo{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+}
+.formulario-campo input{
+    width: 85%;
+}
+
+.formulario-boton{
+    padding-left: 450px;
+}
+
