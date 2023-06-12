@@ -13,7 +13,7 @@
 
 <body>
     <header>
-        <img src="" alt="logo">
+        <img src="../img/logo.jpg" alt="logo">
 
         <nav class="nav">
             <ul class="nav-list">
@@ -32,7 +32,10 @@
         <section class="intro-appointments">
             <h2>Book a date</h2>
             <p>
-                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sint ab reprehenderit exercitationem quo culpa, quia explicabo atque nobis illum molestiae optio corporis provident officiis voluptates, voluptate fugit fugiat nostrum quam.
+                Hey there! Before we get you all set up with an appointment, I just need a little bit of info from you.
+                Fill out the form below with your contact details and let me know any specific ideas or requests you have for your tattoo. 
+                This will help me understand your vision and make sure I can create something amazing just for you. Don't worry, your privacy is super important to me, 
+                so all the info you provide will be kept confidential. Thanks for choosing me as your tattoo artist, and get ready for an awesome tattoo experience!
             </p>
         </section>
 
@@ -99,8 +102,17 @@
                 <input type="text" id="dates">
             </div>
 
-            <div class="formulario-boton">
-                <input type="submit" value="Submit">
+            <div class="formulario-radio">
+                <p>Please select your preferred location for your tattoo session: at the studio or at your home. </p>
+                <input type="radio" id="studio" value="the studio">
+                <label for="studio">Studio</label><br>
+                
+                <input type="radio" id="home" value="your home">
+                <label for="home">Home</label><br>
+            </div>
+
+            <div class="boton-formulario">
+                <h3>Submit</h3>
             </div>
         </form>
     </main>
