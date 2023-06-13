@@ -1,0 +1,73 @@
+.inicio-studio{
+    height:35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    .destacado-studio{
+        background-color: $rojo-oscuro;
+        width: 50%;
+        text-align: center;
+        padding:20px;
+        font-size: $tamaño-fuente-6;
+      }
+}
+
+.ubi-studio{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 50px;
+    align-items: center;
+
+    p{
+        width: 45%;
+        background-color: $gris-oscuro;
+        padding: 30px;
+        text-align: justify;
+        font-size: $tamaño-fuente-9;
+    }
+
+    iframe{
+        width: 60%;
+    }
+}
+
+/*--------------THE STUDIO desktop----------*/
+@media (min-width:$desktop){
+    .inicio-studio{
+        .destacado-studio{
+            background-color: $rojo-oscuro;
+            width: 35%;
+            text-align: center;
+            padding:20px;
+            font-size: $tamaño-fuente-4;
+        }
+    } 
+
+    .ubi-studio{
+        height:60vh;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 100px;
+        align-items: center;
+
+        p{
+            width: 25%;
+            background-color: $gris-oscuro;
+            margin-left: 200px;
+            padding: 30px;
+            text-align: justify;
+            font-size: $tamaño-fuente-7;
+        }
+
+        iframe{
+            margin-right: 200px;
+            width: 30%;
+        }
+    }
+    
+}

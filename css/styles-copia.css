@@ -1,0 +1,731 @@
+/*font-family: 'IBM Plex Sans', sans-serif;
+font-family: 'Permanent Marker', cursive;*/
+
+
+/*-------------------General---------------------*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+ul,ol{
+    list-style: none;
+}
+
+/*fuentes*/
+h1,h2{
+    font-family: 'Permanent Marker', cursive;
+    color: aliceblue;
+}
+
+h3,h4,h5{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+body{
+    background-color: black;
+}
+
+a{
+    text-decoration: none;
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: white;
+}
+
+/*----------------Navegador--------------------*/
+
+/*anterior color #303030*/
+header{
+background-color:black;
+padding: 20px;
+display:flex; 
+justify-content:space-between;
+align-items: center;
+}
+
+header img{
+    height: 60px;
+    width: 60px;
+}
+
+.nav-list{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 0.8rem;  /*$tamaño-fuente-nav-phone*/
+}
+
+
+header h4{
+    display: none;
+}
+
+
+
+@media (min-width: 1024px){
+    header{
+        background-color:black;
+        padding: 20px;
+        display:flex; 
+        justify-content: space-between;
+        align-items: center;
+        }
+
+        header img{
+            height: 45px;
+            width: 45px;
+        }
+
+
+        .nav-list{
+            display:flex;
+            flex-direction: row;
+            gap: 20px;
+            font-size: 1rem;  /*$tamaño-fuente-nav-desktop*/
+        }
+
+        header h4{
+            color: red;
+            display: flex;
+        }
+}
+/*----------------Footer-----------------*/
+footer{
+    height:30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: hsla(0, 0%, 50%, 0.797);
+}
+
+footer h3{
+    font-size: 1rem;  /*$tamaño-h3-footer-phone*/
+    padding-bottom: 5px;
+}
+
+footer h4{
+    font-size: 0.7rem; /*$tamaño-h4-footer-phone:;*/
+    padding-bottom: 5px ;
+}
+
+
+@media (min-width: 1024px){
+    footer{
+        height:30vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: end;
+        padding-right: 30px;
+        color: hsla(0, 0%, 50%, 0.797);
+        gap: 10px;
+     
+    }
+    
+    footer h3{
+        align-self: center;
+        text-align: center;
+        font-size: 1.2rem; /*$tamaño-h3-footer-desktop*/
+    }
+
+    footer h4{
+        font-size: 1rem; /*$tamaño-h4-footer-desktop*/
+        margin-bottom: 20px;
+    }
+
+}
+
+
+/*-------------------------INDEX-------------------------------*/
+p{ font-family: 'IBM Plex Sans', sans-serif;
+    color: aliceblue;}
+
+.portada{
+    /*aca va una imagen de fondo*/
+    
+    background-image: url(../img/inicio-img.jpeg);
+    background-size: 500px 300px;
+    background-repeat:repeat-x;
+    background-position: center;
+    height:50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.tarjeta-presentacion{
+    width: fit-content;
+    height: 30%;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.623);
+    padding-top:5px;
+    padding-bottom: 5px;
+    padding-left:50px;
+    padding-right:50px;
+    
+}
+
+.tarjeta-presentacion h1{
+    color: red;
+    font-size: 2.5rem; 
+}
+
+.tarjeta-presentacion h2{
+    color: black;
+    font-size: 1rem; 
+    font-weight: lighter;
+}
+
+.introduccion{
+    height:70vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-bottom: 30px;
+}
+
+.introduccion p{
+    width: 70%;
+    font-size: 0.8rem;
+    
+}
+
+.boton-rojo{
+    background-color: red;
+    padding: 10px;
+    border-radius: 5px;
+    color: black;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    font-size: 0.8rem;
+    
+}
+
+.mayor{
+    width: 90px;
+    padding-bottom: 0.5px;
+}
+
+.book-now{
+    height:50vh;
+    background-color:grey;
+    background-image: url(../img/img-bookNow.jpg);
+    background-size: 500px 400px;
+    background-position:initial;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.boton-blanco{
+    background-color: whitesmoke;
+    height: 7%;
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: black;
+    font-weight: bolder;
+    font-size: 1rem;
+    text-align: center;
+}
+
+.ig{
+    height:50vh;
+}
+
+/*-----------Index desktop----------*/
+
+@media (min-width: 1024px){
+
+    .portada{
+        /*aca va una imagen de fondo*/
+        
+        background-image: url(../img/inicio-img.jpeg);
+        background-size: 1024px 683px;
+        background-repeat:repeat-x;
+        background-position: center;
+        height:70vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .tarjeta-presentacion{
+        width: fit-content;
+        height: 30%;
+        text-align: center;
+        background-color: rgba(255, 255, 255, 0.623);
+        padding-top:10px;
+        padding-bottom: 10px;
+        padding-left:50px;
+        padding-right:50px;
+        
+    }
+    
+    .tarjeta-presentacion h1{
+        color: red;
+        font-size: 3rem;
+    }
+    
+    .tarjeta-presentacion h2{
+        color: black;
+        font-size: 1.5rem;
+        font-weight: lighter;
+    }
+
+    .introduccion p{
+        width: 50%;
+        padding: 35px;
+        font-size: 1rem;
+    }
+    
+    .boton-rojo{
+        background-color: red;
+        padding: 10px;
+        border-radius: 5px;
+        color: black;
+        font-weight: bold;
+        width: 100px;
+        text-align: center;
+        height: 40px;
+        font-size: 1rem;
+    }
+    
+    .mayor{
+        width: 200px;
+        padding-bottom: 0.5px;
+    }
+
+    .book-now{
+        background-size: 650px 400px;
+    }
+
+    
+    .boton-blanco{
+        background-color: whitesmoke;
+        height: 10%;
+        width: 15%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color: black;
+        font-weight: bolder;
+        font-size: 1.5rem;
+        text-align: center;
+    }
+    
+}
+
+/*---------------------------About me---------------------------*/
+
+.profile{
+    margin-top: 10vh;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.profile h1{
+    font-size: 2rem;
+    width: fit-content;
+    background-color: #303030;
+    padding: 15px;
+    padding-right: 25px;
+    padding-left: 25px;
+    text-align: center;
+    
+}
+
+.profile h3{
+    color: white;
+    font-size: 1rem;
+}
+
+/*profile picture*/
+
+.profile img{
+    height: 400px;
+    margin: 20px;
+}
+
+
+
+.biografia{
+    height:50vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+.biografia h4{
+    color: white;
+    font-weight: lighter;
+    padding-left: 15%;
+    align-self: flex-start;
+    font-size: 0.9;
+}
+
+.biografia p{
+    width: 70%;
+    font-size: 0.9;
+}
+
+.botones{
+    height:50vh; 
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------About me desktop-------*/
+
+@media (min-width: 1024px){
+    .profile h1{
+        font-size: 2.5rem;
+        width: fit-content;
+        background-color: #303030;
+        padding: 15px;
+        text-align: center;
+        width: 30%;
+    }
+    
+    .profile h3{
+        color: white;
+        font-size: 1.3rem;
+    }
+    
+    /*profile picture
+    .profile img{
+        height: 400px;
+        margin: 20px;
+    }
+    */
+
+    .biografia h4{
+        color: white;
+        font-weight: lighter;
+        padding-left: 30%;
+        align-self: flex-start;
+        font-size: 1.2rem;
+    }
+    
+    .biografia p{
+        width: 40%;
+        font-size: 1.2rem;
+    }
+
+    .botones{
+        height:50vh; 
+        display: flex;
+        flex-direction: row;
+        gap: 220px;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+
+
+/*-------------------------WORK----------------------------*/
+
+.work-titulo{
+    height:20vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work-titulo h2{
+    /*padding-left: 60px;*/
+    font-size: 2.5rem;
+}
+
+.work-titulo h4{
+    /*padding-right: 60px;*/
+    color: white;
+    font-size: 0.65rem;
+}
+
+.carrusel{
+    height:70vh;
+    color: white;
+    overflow: hidden;
+}
+
+.carrusel-item{
+    height: 100%;
+    position:relative;
+}
+
+.carrusel-imagen{
+    height: 80%;
+    width: 60%;
+    background-color: blue;
+    margin-left: 20%;
+}
+
+.carrusel-flechas{
+    position: absolute;
+    top: 0;
+    height: 90%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left:4.5%;
+    gap:200px ;
+
+    
+}
+
+.carrusel-flechas i{
+    color: aliceblue;
+}
+
+/*-----------Work desktop----------*/
+
+@media (min-width: 1024px){
+
+    .work-titulo{
+        height:20vh; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+
+    .work-titulo h2{
+        padding-left: 60px;
+        font-size: 3rem;
+    }
+
+    .work-titulo h4{
+        padding-right: 60px;
+        font-size: 0.9rem;
+    }
+
+    .carrusel-flechas{
+        position: absolute;
+        top: 0;
+        height: 90%;
+        width: 90%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px;
+        padding-left: 65px;
+        
+    }
+
+}
+
+/*-------------------------THE STUDIO----------------------------*/
+
+.inicio-studio{
+    height:35vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.destacado-studio{
+  background-color: darkred;
+  width: 50%;
+  text-align: center;
+  padding:20px;
+  font-size: 1.2rem;
+}
+
+.ubi-studio{
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content:center;
+    gap: 50px;
+    align-items: center;
+}
+
+.ubi-studio p{
+    width: 45%;
+    background-color: #303030;
+    padding: 30px;
+    text-align: justify;
+    font-size: 0.8rem;
+}
+
+.ubi-studio iframe{
+    width: 60%;
+}
+
+.formulario-boton{
+    height:50vh; 
+}
+
+/*--------------THE STUDIO desktop----------*/
+@media (min-width: 1024px){
+
+.destacado-studio{
+  background-color: darkred;
+  width: 35%;
+  text-align: center;
+  padding:20px;
+  font-size: 1.5rem;
+}
+
+.ubi-studio{
+    height:60vh;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 100px;
+    align-items: center;
+}
+
+.ubi-studio p{
+    width: 25%;
+    background-color: #303030;
+    margin-left: 200px;
+    padding: 30px;
+    text-align: justify;
+    font-size: 1rem;
+}
+
+.ubi-studio iframe{
+    margin-right: 200px;
+    width: 30%;
+}
+
+}
+/*------------------APPOINTMENTS-----------------------*/
+
+.intro-appointments{
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    margin-top: 50px;
+    align-items: center;
+    gap: 20px;
+}
+
+.intro-appointments h2{
+    font-size: 2rem;
+}
+
+.intro-appointments p{
+    width: 75%;
+    font-size: 0.8rem;
+}
+
+.formulario{
+    font-family: 'IBM Plex Sans', sans-serif;
+    color: aliceblue;
+    display: flex;
+    flex-direction: column;
+    font-size: 0.8rem;
+    gap: 20px;
+    padding-left:60px;
+}
+
+.formulario-campo{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    
+}
+.formulario-campo input{
+    width: 85%;
+}
+
+.formulario-radio p{
+    width: 85%;
+    margin-bottom: 10px;
+}
+
+.boton-formulario{
+    background-color: whitesmoke;
+    height: 7%;
+    width: 100px;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: black;
+    font-weight: bolder;
+    font-size: 0.9rem;
+    text-align: center;
+    margin-left: 30%;
+    border-radius: 5px;
+}
+
+/*-----------APPOINTMENTS desktop----------*/
+
+@media (min-width: 1024px){
+    .intro-appointments{
+        height: 35vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        margin-top: 50px;
+        align-items: center;
+        gap: 20px;
+    }
+    
+    .intro-appointments h2{
+        font-size: 2.5rem;
+    }
+    
+    .intro-appointments p{
+        width: 50%;
+        font-size: 1rem;
+    }
+    
+    .formulario{
+        font-family: 'IBM Plex Sans', sans-serif;
+        color: aliceblue;
+        font-size: 1rem;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        padding-left:200px;
+    }
+    
+    .formulario-campo{
+        display: flex;
+        flex-direction: column;
+        gap:20px;
+        
+    }
+    .formulario-campo input{
+        width: 85%;
+    }
+    
+    .boton-formulario{
+        background-color: whitesmoke;
+        height: 7%;
+        width: 100px;
+        margin-top: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color: black;
+        font-weight: bolder;
+        font-size: 0.9rem;
+        text-align: center;
+        margin-left: 408px;
+        border-radius: 5px;
+    }
+    
+}

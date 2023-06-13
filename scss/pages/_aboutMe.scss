@@ -1,0 +1,104 @@
+.profile{
+    margin-top: 10vh;
+    height:80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+
+    h1{
+        font-size: $tamaño-fuente-3;
+        width: fit-content;
+        background-color: $gris-oscuro;
+        padding: 15px;
+        padding-right: 25px;
+        padding-left: 25px;
+        text-align: center;
+    }
+
+    h3{
+        color: $color-blanco;
+        font-size: $tamaño-fuente-7;
+    }
+
+    img{
+        height: 400px;
+        margin: 20px;
+    }
+}
+
+.biografia{
+    height:50vh; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+    h4{
+        color:$color-blanco;
+        font-weight: lighter;
+        padding-left: 15%;
+        align-self: flex-start;
+        font-size: $tamaño-fuente-8;
+    }
+
+    p{
+        width: 70%;
+        font-size: $tamaño-fuente-8;
+    }
+}
+
+.botones{
+    height:50vh; 
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+/*---------About me desktop-------*/
+
+@media (min-width:$desktop){
+    .profile{
+        h1{
+            font-size: $tamaño-fuente-2;
+            width: fit-content;
+            background-color: $gris-oscuro;
+            padding: 15px;
+            text-align: center;
+            width: 30%;
+        }
+
+        h3{
+            color:$color-blanco;
+            font-size: $tamaño-fuente-5;
+        }
+    }
+
+    .biografia{
+        h4{
+            color: $color-blanco;
+            font-weight: lighter;
+            padding-left: 30%;
+            align-self: flex-start;
+            font-size: $tamaño-fuente-6;
+        }
+
+        p{
+            width: 40%;
+            font-size: $tamaño-fuente-6;
+        }
+    }
+
+    .botones{
+        height:50vh; 
+        display: flex;
+        flex-direction: row;
+        gap: 220px;
+        justify-content: center;
+        align-items: center;
+    }
+}

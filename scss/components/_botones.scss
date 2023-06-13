@@ -1,0 +1,93 @@
+.boton-rojo{
+    background-color: $color-rojo;
+    padding: 10px;
+    border-radius: 5px;
+    color: $color-negro;
+    font-weight: bold;
+    width: 100px;
+    text-align: center;
+    height: 40px;
+    font-size: $tamaño-fuente-9;
+    
+}
+
+.mayor{
+    width: 90px;
+    padding-bottom: 0.5px;
+}
+
+.boton-blanco{
+    background-color: $color-blanco;
+    height: 7%;
+    width: 30%;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    color: $color-negro;
+    font-weight: bolder;
+    font-size: $tamaño-fuente-7;
+    text-align: center;
+}
+
+@media (min-width:$desktop){
+
+    .boton-rojo{
+        background-color: $color-rojo;
+        padding: 10px;
+        border-radius: 5px;
+        color: $color-negro;
+        font-weight: bold;
+        width: 100px;
+        text-align: center;
+        height: 40px;
+        font-size: $tamaño-fuente-7;
+    }
+    
+    .mayor{
+        width: 200px;
+        padding-bottom: 0.5px;
+    }
+
+    .boton-blanco{
+        background-color: $color-blanco;
+        height: 10%;
+        width: 15%;
+        padding-top: 20px;
+        padding-bottom: 10px;
+        color: $color-negro;
+        font-weight: bolder;
+        font-size:$tamaño-fuente-4;
+        text-align: center;
+    }
+}
+
+.boton-formulario{
+    background-color: $color-blanco;
+    height: 7%;
+    width: 100px;
+    margin-top: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    color: $color-negro;
+    font-weight: bolder;
+    font-size:$tamaño-fuente-8;
+    text-align: center;
+    margin-left: 30%;
+    border-radius: 5px;
+}
+
+@media (min-width:$desktop){
+    .boton-formulario{
+        background-color: $color-blanco;
+        height: 7%;
+        width: 100px;
+        margin-top: 30px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        color:$color-negro;
+        font-weight: bolder;
+        font-size: $tamaño-fuente-8;
+        text-align: center;
+        margin-left: 408px;
+        border-radius: 5px;
+    }
+}
