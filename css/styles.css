@@ -591,6 +591,9 @@ footer h4 {
 .formulario .formulario-campo input {
   width: 85%;
 }
+.formulario .formulario-campo input:hover {
+  background-color: grey;
+}
 .formulario .formulario-radio p {
   width: 85%;
   margin-bottom: 10px;
@@ -630,9 +633,6 @@ footer h4 {
   }
   .formulario .formulario-campo input {
     width: 85%;
-  }
-  .formulario .formulario-campo input:hover {
-    background-color: grey;
   }
 }
 
