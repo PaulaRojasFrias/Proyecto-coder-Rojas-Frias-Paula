@@ -82,6 +82,9 @@
 
             input{
                 width: 85%;
+                &:hover{
+                    background-color:$color-gris;
+                }
             }
             
         }
