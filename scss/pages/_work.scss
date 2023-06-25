@@ -1,27 +1,28 @@
-.work-titulo{
-    height:20vh; 
-    @include flexbox($centro,$centro,$columna);
+.work-titulo {
+    height: 20vh;
+    @include flexbox($centro, $centro, $columna);
 
-    h2{
+    h1 {
         font-size: $tamaño-fuente-2;
     }
 
-    h4{
-        color:$color-blanco;
+    h2 {
+        color: $color-blanco;
         font-size: $tamaño-fuente-11;
+        font-family: $font-parrafos;
     }
 }
 
-.carrusel{
-    height:70vh;
+.carrusel {
+    height: 70vh;
     color: $color-blanco;
     overflow: hidden;
 
-    .carrusel-item{
+    .carrusel-item {
         height: 100%;
-        position:relative;
+        position: relative;
 
-        .carrusel-imagen{
+        .carrusel-imagen {
             height: 80%;
             width: 60%;
             margin-left: 20%;
@@ -30,31 +31,32 @@
             justify-content: center;
             gap: 70px;
 
-            .img1{
+            .img1 {
                 height: 100%;
             }
 
-            .img2{
+            .img2 {
                 display: none;
             }
 
-            .img3{
+            .img3 {
                 display: none;
             }
         }
 
-        .carrusel-flechas{
+        .carrusel-flechas {
             position: absolute;
             top: 0;
             height: 90%;
             width: 90%;
             @include flexbox();
-            padding-left:4.5%;
-            gap:200px ;
-            
-            i{
+            padding-left: 4.5%;
+            gap: 200px;
+
+            i {
                 color: $color-blanco;
-                &:hover{
+
+                &:hover {
                     transform: scale(1.5);
                 }
             }
@@ -63,27 +65,28 @@
 }
 
 /*-----------Work desktop----------*/
-@media (min-width:$desktop){
+@media (min-width:$desktop) {
 
-    .work-titulo{
-        height:20vh; 
-        
+    .work-titulo {
+        height: 20vh;
+
         @include flexbox(space-between, $centro, $fila);
 
-        h2{
+        h1 {
             padding-left: 60px;
             font-size: $tamaño-fuente-1;
         }
 
-        h4{
+        h2 {
             padding-right: 60px;
             font-size: $tamaño-fuente-8;
+            font-family: $font-parrafos;
         }
     }
 
-    .carrusel{
-        .carrusel-item{
-            .carrusel-imagen{
+    .carrusel {
+        .carrusel-item {
+            .carrusel-imagen {
                 height: 80%;
                 width: 60%;
                 margin-left: 20%;
@@ -91,25 +94,26 @@
                 flex-direction: row;
                 justify-content: center;
                 gap: 70px;
-    
-                .img1{
+
+                .img1 {
                     height: 100%;
-                    
+
                 }
 
-                .img2{
-                    height: 100%;
-                    display: inline;
-                }
-
-                .img3{
+                .img2 {
                     height: 100%;
                     display: inline;
                 }
 
-            
-        }
-            .carrusel-flechas{
+                .img3 {
+                    height: 100%;
+                    display: inline;
+                }
+
+
+            }
+
+            .carrusel-flechas {
                 position: absolute;
                 top: 0;
                 height: 90%;
@@ -120,9 +124,9 @@
                 padding: 20px;
                 padding-left: 65px;
 
-              
-        }
-    }
 
-}
+            }
+        }
+
+    }
 }

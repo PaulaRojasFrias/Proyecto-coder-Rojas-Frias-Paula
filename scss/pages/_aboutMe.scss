@@ -1,10 +1,10 @@
-.profile{
+.profile {
     margin-top: 10vh;
-    height:80vh;
-    @include flexbox($centro,$centro,$columna);
+    height: 80vh;
+    @include flexbox($centro, $centro, $columna);
     gap: 30px;
 
-    h1{
+    h1 {
         font-size: $tamaño-fuente-3;
         width: fit-content;
         background-color: $gris-oscuro;
@@ -14,48 +14,49 @@
         text-align: $centro;
     }
 
-    h3{
+    h2 {
         color: $color-blanco;
         font-size: $tamaño-fuente-7;
+        font-family: $font-parrafos;
     }
 
-    img{
+    img {
         height: 400px;
         margin: 20px;
     }
 }
 
-.biografia{
+.biografia {
     margin-top: 20px;
-    height:50vh; 
-    @include flexbox($centro,$centro,$columna);
+    height: 50vh;
+    @include flexbox($centro, $centro, $columna);
     gap: 15px;
 
-    h4{
-        color:$color-blanco;
+    h4 {
+        color: $color-blanco;
         font-weight: lighter;
         padding-left: 15%;
         align-self: flex-start;
         font-size: $tamaño-fuente-8;
     }
 
-    p{
+    p {
         width: 70%;
         font-size: $tamaño-fuente-8;
     }
 }
 
-.botones{
-    height:50vh; 
-    @include flexbox($centro,$centro,$columna);
+.botones {
+    height: 50vh;
+    @include flexbox($centro, $centro, $columna);
     gap: 50px;
 }
 
 /*---------About me desktop-------*/
 
-@media (min-width:$desktop){
-    .profile{
-        h1{
+@media (min-width:$desktop) {
+    .profile {
+        h1 {
             font-size: $tamaño-fuente-2;
             width: fit-content;
             background-color: $gris-oscuro;
@@ -64,14 +65,15 @@
             width: 30%;
         }
 
-        h3{
-            color:$color-blanco;
+        h2 {
+            color: $color-blanco;
             font-size: $tamaño-fuente-5;
+            font-family: $font-parrafos;
         }
     }
 
-    .biografia{
-        h4{
+    .biografia {
+        h4 {
             color: $color-blanco;
             font-weight: lighter;
             padding-left: 30%;
@@ -79,14 +81,14 @@
             font-size: $tamaño-fuente-6;
         }
 
-        p{
+        p {
             width: 40%;
             font-size: $tamaño-fuente-6;
         }
     }
 
-    .botones{
-        height:50vh; 
+    .botones {
+        height: 50vh;
         @include flexbox();
         gap: 220px;
     }

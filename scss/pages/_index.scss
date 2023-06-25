@@ -1,105 +1,105 @@
-.portada{ 
+.portada {
     background-image: url(../img/inicio-img.jpeg);
     background-size: 500px 300px;
-    background-repeat:repeat-x;
+    background-repeat: repeat-x;
     background-position: center;
-    height:50vh;
+    height: 50vh;
     @include flexbox();
-    
 
-    .tarjeta-presentacion{
+
+    .tarjeta-presentacion {
         width: fit-content;
         height: 30%;
         text-align: center;
         background-color: $color-fondo-tpresentacion;
-        padding-top:5px;
+        padding-top: 5px;
         padding-bottom: 5px;
-        padding-left:50px;
-        padding-right:50px;
+        padding-left: 50px;
+        padding-right: 50px;
 
-        h1{
+        h1 {
             color: $color-rojo;
-            font-size: $tamaño-fuente-2; 
+            font-size: $tamaño-fuente-2;
         }
-        
-        h2{
+
+        h2 {
             color: $color-negro;
-            font-size: $tamaño-fuente-7; 
+            font-size: $tamaño-fuente-7;
             font-weight: lighter;
         }
     }
 }
 
-.introduccion{
-    height:70vh;
-    @include flexbox($centro,$centro,$columna);
+.introduccion {
+    height: 70vh;
+    @include flexbox($centro, $centro, $columna);
     gap: 20px;
     margin-bottom: 30px;
 
-    p{
+    p {
         width: 70%;
         font-size: $tamaño-fuente-9;
     }
 }
 
-.book-now{
-    height:50vh;
-    background-color:$color-gris;
+.book-now {
+    height: 50vh;
+    background-color: $color-gris;
     background-image: url(../img/img-bookNow.jpg);
     background-size: 500px 400px;
-    background-position:initial;
+    background-position: initial;
     @include flexbox();
-    
+
 }
 
-.ig{
-    height:50vh;
+.ig {
+    height: 50vh;
 }
 
 /*-----------Index desktop----------*/
-@media (min-width:$desktop){
-    .portada{ 
+@media (min-width:$desktop) {
+    .portada {
         background-image: url(../img/inicio-img.jpeg);
         background-size: 1024px 683px;
-        background-repeat:repeat-x;
+        background-repeat: repeat-x;
         background-position: center;
-        height:70vh;
+        height: 70vh;
         @include flexbox();
-       
-    
-        .tarjeta-presentacion{
+
+
+        .tarjeta-presentacion {
             width: fit-content;
             height: 30%;
             text-align: center;
             background-color: $color-fondo-tpresentacion;
-            padding-top:10px;
+            padding-top: 10px;
             padding-bottom: 10px;
-            padding-left:50px;
-            padding-right:50px;
-    
-            h1{
+            padding-left: 50px;
+            padding-right: 50px;
+
+            h1 {
                 color: $color-rojo;
                 font-size: $tamaño-fuente-1;
             }
-            
-            h2{
+
+            h2 {
                 color: $color-negro;
                 font-size: $tamaño-fuente-4;
                 font-weight: lighter;
             }
         }
     }
-    
-    .introduccion{
-     
-        p{
+
+    .introduccion {
+
+        p {
             width: 50%;
             padding: 35px;
             font-size: $tamaño-fuente-7;
         }
     }
-    
-    .book-now{
+
+    .book-now {
         background-size: 650px 400px;
     }
 

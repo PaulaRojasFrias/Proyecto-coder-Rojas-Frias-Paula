@@ -1,23 +1,23 @@
-.inicio-studio{
-    height:35vh;
+.inicio-studio {
+    height: 35vh;
     @include flexbox();
 
-    .destacado-studio{
+    .destacado-studio {
         background-color: $rojo-oscuro;
         width: 50%;
         text-align: center;
-        padding:20px;
+        padding: 20px;
         font-size: $tamaño-fuente-6;
-      }
+    }
 }
 
-.ubi-studio{
-    height:100vh;
-    @include flexbox($centro,$centro,$columna);
+.ubi-studio {
+    height: 100vh;
+    @include flexbox($centro, $centro, $columna);
     gap: 50px;
-  
 
-    p{
+
+    p {
         width: 45%;
         background-color: $gris-oscuro;
         padding: 30px;
@@ -25,33 +25,34 @@
         font-size: $tamaño-fuente-9;
     }
 
-    iframe{
+    iframe {
         width: 60%;
-        &:hover{
+
+        &:hover {
             transform: scale(1.2);
         }
     }
 }
 
 /*--------------THE STUDIO desktop----------*/
-@media (min-width:$desktop){
-    .inicio-studio{
-        .destacado-studio{
+@media (min-width:$desktop) {
+    .inicio-studio {
+        .destacado-studio {
             background-color: $rojo-oscuro;
             width: 35%;
             text-align: $centro;
-            padding:20px;
+            padding: 20px;
             font-size: $tamaño-fuente-4;
         }
-    } 
+    }
 
-    .ubi-studio{
-        height:60vh;
+    .ubi-studio {
+        height: 60vh;
         @include flexbox(space-between, $centro, $fila);
         gap: 100px;
-      
 
-        p{
+
+        p {
             width: 25%;
             background-color: $gris-oscuro;
             margin-left: 200px;
@@ -60,10 +61,10 @@
             font-size: $tamaño-fuente-7;
         }
 
-        iframe{
+        iframe {
             margin-right: 200px;
             width: 30%;
         }
     }
-    
+
 }

@@ -1,44 +1,45 @@
-.intro-appointments{
+.intro-appointments {
     height: 40vh;
     @include flexbox(start, $centro, $columna);
     margin-top: 50px;
     gap: 20px;
 
-    h2{
+    h1 {
         font-size: $tamaño-fuente-3;
     }
 
-    p{
+    p {
         width: 75%;
         font-size: $tamaño-fuente-9;
     }
 }
 
-.formulario{
+.formulario {
     font-family: 'IBM Plex Sans', sans-serif;
     color: $color-blanco;
     display: flex;
     flex-direction: column;
     font-size: $tamaño-fuente-9;
     gap: 20px;
-    padding-left:60px;
+    padding-left: 60px;
 
-    
-.formulario-campo{
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    
-    input{
-        width: 85%;
-        &:hover{
-            background-color:$color-gris;
+
+    .formulario-campo {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+
+        input {
+            width: 85%;
+
+            &:hover {
+                background-color: $color-gris;
+            }
         }
     }
-}
 
-    .formulario-radio{
-        p{
+    .formulario-radio {
+        p {
             width: 85%;
             margin-bottom: 10px;
         }
@@ -46,41 +47,41 @@
 }
 
 /*-----------APPOINTMENTS desktop----------*/
-@media (min-width:$desktop){
-    .intro-appointments{
+@media (min-width:$desktop) {
+    .intro-appointments {
         height: 35vh;
         @include flexbox(start, $centro, $columna);
         margin-top: 50px;
         gap: 20px;
 
-        h2{
+        h1 {
             font-size: $tamaño-fuente-2;
         }
 
-        p{
+        p {
             width: 50%;
             font-size: $tamaño-fuente-7;
         }
     }
-    
-    .formulario{
+
+    .formulario {
         font-family: 'IBM Plex Sans', sans-serif;
         color: $color-blanco;
         font-size: $tamaño-fuente-7;
         display: flex;
         flex-direction: column;
         gap: 20px;
-        padding-left:200px;
+        padding-left: 200px;
 
-        .formulario-campo{
+        .formulario-campo {
             display: flex;
             flex-direction: column;
-            gap:20px;
+            gap: 20px;
 
-            input{
+            input {
                 width: 85%;
             }
-            
+
         }
     }
 

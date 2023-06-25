@@ -1,187 +1,191 @@
-*{
-	margin: 0;
-	padding: 0;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-ul,ol{
+ul,
+ol {
     list-style: none;
 }
 
 /*Fuentes*/
-$font-titulos:'Permanent Marker', cursive;
-$font-parrafos:'IBM Plex Sans', sans-serif;
+$font-titulos: 'Permanent Marker', cursive;
+$font-parrafos: 'IBM Plex Sans', sans-serif;
 
 /*colores*/
 $color-rojo: red;
 $color-negro: black;
-$color-blanco: white; 
-$color-gris: grey; 
-$gris-oscuro:#303030;
-$rojo-oscuro:darkred;
+$color-blanco: white;
+$color-gris: grey;
+$gris-oscuro: #303030;
+$rojo-oscuro: darkred;
 $color-fuente-footer: hsla(0, 0%, 50%, 0.797);
 $color-fondo-tpresentacion: rgba(255, 255, 255, 0.623);
 
 /*tamaños tipograficos*/
-$tamaño-fuente-nav-phone:0.8rem;
+$tamaño-fuente-nav-phone: 0.8rem;
 
 $tamaño-fuente-nav-desktop: 1rem;
 
-$tamaño-h3-footer-phone:1rem;
+$tamaño-h3-footer-phone: 1rem;
 
-$tamaño-h4-footer-phone:0.7rem;
+$tamaño-h4-footer-phone: 0.7rem;
 
-$tamaño-h3-footer-desktop:1.2rem;
+$tamaño-h3-footer-desktop: 1.2rem;
 
 $tamaño-h4-footer-desktop: 1rem;
 
 /*.........*/
 
-$tamaño-fuente-1:3rem;
+$tamaño-fuente-1: 3rem;
 
-$tamaño-fuente-2:2.5rem;
+$tamaño-fuente-2: 2.5rem;
 
-$tamaño-fuente-3:2rem;
+$tamaño-fuente-3: 2rem;
 
-$tamaño-fuente-4:1.5rem;
+$tamaño-fuente-4: 1.5rem;
 
-$tamaño-fuente-5:1.3rem;
+$tamaño-fuente-5: 1.3rem;
 
-$tamaño-fuente-6:1.2rem;
+$tamaño-fuente-6: 1.2rem;
 
-$tamaño-fuente-7:1rem;
+$tamaño-fuente-7: 1rem;
 
-$tamaño-fuente-8:0.9rem;
+$tamaño-fuente-8: 0.9rem;
 
-$tamaño-fuente-9:0.8rem;
+$tamaño-fuente-9: 0.8rem;
 
-$tamaño-fuente-10:0.7rem;
+$tamaño-fuente-10: 0.7rem;
 
-$tamaño-fuente-11:0.65rem;
+$tamaño-fuente-11: 0.65rem;
 
 
 /*breakpoints*/
-$desktop:1024px;
+$desktop: 1024px;
 
 
 /* variables flexbox*/
 $centro: center;
-$columna: column; 
+$columna: column;
 $fila: row;
 
 /*----------general---------*/
 
-h1,h2{
+h1,
+h2 {
     font-family: $font-titulos;
     color: $color-blanco;
 }
 
-h3,h4,h5{
+h3,
+h4,
+h5 {
     font-family: $font-parrafos;
 }
 
-body{
+body {
     background-color: $color-negro;
 }
 
-a{
+a {
     text-decoration: none;
     font-family: $font-parrafos;
     color: $color-blanco;
 }
 
-p{ 
+p {
     font-family: $font-parrafos;
     color: $color-blanco;
 }
 
 
 /*------header phone-----*/
-header{
-    background-color:$color-negro;
+header {
+    background-color: $color-negro;
     padding: 20px;
-    display:flex; 
-    justify-content:space-between;
+    display: flex;
+    justify-content: space-between;
     align-items: center;
 
-    img{
+    img {
         height: 60px;
         width: 60px;
     }
 
-    .nav-list{
+    .nav-list {
         display: flex;
         flex-direction: column;
         justify-content: center;
         font-size: $tamaño-fuente-nav-phone;
 
-        li{
-            &:hover{
+        li {
+            &:hover {
                 transform: scale(1.3);
             }
         }
     }
 
-    h4{
+    h4 {
         display: none;
     }
-    
+
 }
 
 /*-----header desktop------*/
-@media (min-width:$desktop){
-    header{
-        background-color:$color-negro;
+@media (min-width:$desktop) {
+    header {
+        background-color: $color-negro;
         padding: 20px;
-        display:flex; 
+        display: flex;
         justify-content: space-between;
         align-items: center;
-    
-        img{
+
+        img {
             height: 45px;
             width: 45px;
         }
-    
-        .nav-list{
-            display:flex;
+
+        .nav-list {
+            display: flex;
             flex-direction: row;
             gap: 20px;
             font-size: $tamaño-fuente-nav-desktop;
         }
-    
-        h4{
+
+        h4 {
             color: $color-rojo;
             display: flex;
         }
-        
+
     }
 
 }
 
 /*----------------Footer phone-----------------*/
-footer{
-    height:30vh;
+footer {
+    height: 30vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     color: $color-fuente-footer;
 
-    h3{
+    h3 {
         font-size: $tamaño-h3-footer-phone;
         padding-bottom: 5px;
     }
 
-    h4{
+    h4 {
         font-size: $tamaño-h4-footer-phone;
-        padding-bottom: 5px ;
+        padding-bottom: 5px;
     }
 }
 
 /*----------------Footer desktop-----------------*/
 
-@media (min-width:$desktop){
-    footer{
-        height:30vh;
+@media (min-width:$desktop) {
+    footer {
+        height: 30vh;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -189,14 +193,14 @@ footer{
         padding-right: 30px;
         color: $color-fuente-footer;
         gap: 10px;
-    
-        h3{
+
+        h3 {
             align-self: center;
             text-align: center;
-            font-size: $tamaño-h3-footer-desktop; 
+            font-size: $tamaño-h3-footer-desktop;
         }
-    
-        h4{
+
+        h4 {
             font-size: $tamaño-h4-footer-desktop;
             margin-bottom: 20px;
         }
@@ -205,8 +209,8 @@ footer{
 
 /*mixin*/
 
-@mixin flexbox ($justify:$centro, $align: $centro, $direccion:$fila){
-    display:flex;
+@mixin flexbox ($justify: $centro, $align: $centro, $direccion: $fila) {
+    display: flex;
     justify-content: $justify;
     align-items: $align;
     flex-direction: $direccion;
