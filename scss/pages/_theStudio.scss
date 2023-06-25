@@ -1,9 +1,6 @@
 .inicio-studio{
     height:35vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flexbox();
 
     .destacado-studio{
         background-color: $rojo-oscuro;
@@ -16,11 +13,9 @@
 
 .ubi-studio{
     height:100vh;
-    display:flex;
-    flex-direction: column;
-    justify-content:center;
+    @include flexbox($centro,$centro,$columna);
     gap: 50px;
-    align-items: center;
+  
 
     p{
         width: 45%;
@@ -44,7 +39,7 @@
         .destacado-studio{
             background-color: $rojo-oscuro;
             width: 35%;
-            text-align: center;
+            text-align: $centro;
             padding:20px;
             font-size: $tamaño-fuente-4;
         }
@@ -52,11 +47,9 @@
 
     .ubi-studio{
         height:60vh;
-        display:flex;
-        flex-direction: row;
-        justify-content: space-between;
+        @include flexbox(space-between, $centro, $fila);
         gap: 100px;
-        align-items: center;
+      
 
         p{
             width: 25%;

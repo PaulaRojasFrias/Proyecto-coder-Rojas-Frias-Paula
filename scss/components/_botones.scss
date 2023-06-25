@@ -16,6 +16,7 @@
 }
 
 .mayor{
+    @extend .boton-rojo;
     width: 90px;
     padding-bottom: 0.5px;
 }
@@ -53,6 +54,7 @@
     }
     
     .mayor{
+        @extend .boton-rojo;
         width: 200px;
         padding-bottom: 0.5px;
     }

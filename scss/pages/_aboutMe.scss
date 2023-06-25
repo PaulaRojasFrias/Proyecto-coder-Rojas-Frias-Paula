@@ -1,10 +1,7 @@
 .profile{
     margin-top: 10vh;
     height:80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox($centro,$centro,$columna);
     gap: 30px;
 
     h1{
@@ -14,7 +11,7 @@
         padding: 15px;
         padding-right: 25px;
         padding-left: 25px;
-        text-align: center;
+        text-align: $centro;
     }
 
     h3{
@@ -29,11 +26,9 @@
 }
 
 .biografia{
+    margin-top: 20px;
     height:50vh; 
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox($centro,$centro,$columna);
     gap: 15px;
 
     h4{
@@ -52,11 +47,8 @@
 
 .botones{
     height:50vh; 
-    display: flex;
-    flex-direction: column;
+    @include flexbox($centro,$centro,$columna);
     gap: 50px;
-    justify-content: center;
-    align-items: center;
 }
 
 /*---------About me desktop-------*/
@@ -95,10 +87,7 @@
 
     .botones{
         height:50vh; 
-        display: flex;
-        flex-direction: row;
+        @include flexbox();
         gap: 220px;
-        justify-content: center;
-        align-items: center;
     }
 }
