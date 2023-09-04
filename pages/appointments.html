@@ -25,6 +25,7 @@
                 <li><a href="./work.html">Work</a></li>
                 <li><a href="./theStudio.html">The studio</a></li>
                 <li><a href="./appointments.html">Appointments</a></li>
+                <li><a href="./ownerSection.html">Owner´s Section</a></li>
             </ul>
         </nav>
 
@@ -45,7 +46,8 @@
             </p>
         </section>
 
-        <form class="formulario">
+        <form id="formulario" class="formulario">
+            <!-- Write your comments here 
             <div class="formulario-campo">
                 <label for="nombre">Your name</label>
                 <input type="text" id="nombre" name="nombre">
@@ -120,7 +122,65 @@
             <div class="boton-formulario">
                 <h3>Submit</h3>
             </div>
+            -->
+            <label for="nombre">Your name</label>
+            <input type="text" id="nombre" name="nombre">
+
+            <label for="apellido">Your last name</label>
+            <input type="text" id="apellido" name="apellido">
+
+            <div class="formulario-radio">
+                <p>Are you over 18?</p>
+                <input type="radio" id="yes" name="yes" value="yes">
+                <label for="yes">Yes</label><br>
+
+                <input type="radio" id="no" name="no" value="no">
+                <label for="no">No</label><br>
+            </div>
+
+            <label for="email">Your email</label>
+            <input type="email" id="email" name="email">
+
+            <label for="numeroTelefono">Your phone number</label>
+            <input type="tel" id="numeroTelefono" name="numeroTelefono">
+
+            <label for="tattooDescription">Tattoo description</label>
+            <input type="text" id="tattooDescription" name="tattooDescription">
+
+            <label for="referencePicture">Reference picture</label>
+            <input type="text" id="referencePicture" name="referencePicture">
+
+            <label for="placement">Placement</label>
+            <input type="text" id="placement" name="placement">
+
+            <label for="approximateSize ">Approximate size</label>
+            <input type="text" id="approximateSize" name="approximateSize">
+
+            <div>
+                <input type="radio" id="disponiblidad1" name="disponiblidad1" value="I have open availability">
+                <label for="disponiblidad1">I have open availability</label><br>
+
+                <input type="radio" id="disponiblidad2" name="disponiblidad2" value="I have specific dates available">
+                <label for="disponiblidad2">I have specific dates available</label><br>
+            </div>
+
+            <p>If you have specific dates please let me know:</p>
+            <input type="text" id="dates" name="dates">
+
+
+            <div class="formulario-radio">
+                <p>Please select your preferred location for your tattoo session: at the studio or at your home. </p>
+                <input type="radio" id="studio" name="studio" value="the studio">
+                <label for="studio">Studio</label><br>
+
+                <input type="radio" id="home" name="home" value="your home">
+                <label for="home">Home</label><br>
+            </div>
+
+
+            <input type="submit" class="boton-formulario" value="Submit" />
         </form>
+
     </main>
 
     <footer>
@@ -131,6 +191,8 @@
         </div>
 
     </footer>
+
+    <script src="../js/main.js"></script>
 </body>
 
 </html>
