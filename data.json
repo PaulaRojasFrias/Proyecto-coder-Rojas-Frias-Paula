@@ -1,0 +1,6 @@
+[
+    {"nombre": "Paz", "apellido": "Alonso", "email": "alonzop@gmail.com", "numeroTelefono":3834567809, "tattooDescription":"one point on each finger", "placement": "hands", "approximateSize": "0.5cm", "dates":"10/09/23"},
+    {"nombre": "Louis", "apellido": "Taylor", "email": "ltaylor24@gmail.com", "numeroTelefono": 1786348966, "tattooDescription": "snake Tattoo", "placement": "leg", "approximateSize": "20cm", "dates":"1/09/23"},
+    {"nombre": "Juan ", "apellido": "Diaz", "email": "juandiaz12@gmail.com", "numeroTelefono":3835678922, "tattooDescription":"Tribal Tattoo", "placement":"arm", "approximateSize": "10cm", "dates": "2/10/23"},
+    {"nombre": "Julieta", "apellido": "Acosta", "email":"juacosta@gmail.com", "numeroTelefono":5467890932, "tattooDescription": "Rose Tattoo" , "placement":"leg", "approximateSize":"20cm", "dates": "5/9/23"}
+]
